@@ -1,0 +1,11 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="beans.Student" table="student" schema="college">
+    <id name="id" column="id">
+    <generator class="hilo"/>
+    </id>
+    <property name="studentname" type="java.lang.String"/>
+    <property name="marks" column="marks" type="int"/>
+    </class>    </hibernate-mapping>
